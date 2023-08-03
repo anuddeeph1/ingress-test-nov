@@ -6,7 +6,7 @@ metadata:
   name: httpd
   namespace: httpd-test
 spec:
-  replicas: 5
+  replicas: 7
   selector:
     matchLabels:
       app: httpd
