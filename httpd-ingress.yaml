@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  name: httpd
+  namespace: httpd-test
+spec:
+  rules:
+  - host: httpd1.test.co
+    http:
+      paths:
+      - backend:
+          service:
+            name: httpd
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
