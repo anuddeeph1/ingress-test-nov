@@ -14,5 +14,5 @@ spec:
             name: httpd
             port:
               number: 80
-        path: /
+        path: /httpd
         pathType: ImplementationSpecific
