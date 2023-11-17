@@ -17,5 +17,5 @@ spec:
         app: httpd
     spec:
       containers:
-      - image: httpd
+      - image: anuddeeph/apache-webserver-php
         name: httpd
